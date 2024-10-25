@@ -20,10 +20,10 @@
 
         <!-- Registration Form -->
         <form id="registration">
-          <input name="username" type="text" placeholder="Username" />
+          <input name="username" type="text" placeholder="Username" onsubmit="validateForm()"/>
           <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
-          <input name="email" type="text" placeholder="Email" />
+          <input name="email" type="text" placeholder="Email"  />
           <span class="input-icon"><i class="fa-solid fa-envelope"></i></span
           ><br />
 
@@ -75,6 +75,11 @@
     </div>
 
     <!-- Error Display Container -->
-    <div id="errorDisplay"></div>
+    <div id="errorDisplay">
+        <p>Errors:</p>
+        <ol class="error-list">
+            
+        </ol>
+    </div>
   </body>
 </html>
