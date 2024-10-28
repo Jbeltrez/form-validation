@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/d8f052c6cf.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="src/index.js"></script>
+    <script type="text/javascript" src="src/index.js" defer></script>
   </head>
   <body>
     <!-- Container for entire form. -->
@@ -20,7 +20,7 @@
 
         <!-- Registration Form -->
         <form id="registration">
-          <input name="username" type="text" placeholder="Username" onsubmit="validateForm()"/>
+          <input name="username" type="text" placeholder="Username" />
           <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
           <input name="email" type="text" placeholder="Email"  />
@@ -63,7 +63,7 @@
           ><br /><br />
 
           <div class="flex-row">
-            <input name="persist" type="checkbox" />
+            <input name="persist" type="checkbox" required/>
             <label for="persist">Keep me logged in.</label>
             <input type="submit" value="Login" />
           </div>
@@ -78,7 +78,7 @@
     <div id="errorDisplay">
         <p>Errors:</p>
         <ol class="error-list">
-            
+
         </ol>
     </div>
   </body>
